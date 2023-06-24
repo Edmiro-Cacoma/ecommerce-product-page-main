@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Edmiro Cacoma">
+  <meta name="description"
+    content="A responsive, mobile first e-commerce product page built according to the challenge by Frontend Mentor, using HTML, CSS and Javascript">
+  <meta name="keywords"
+    content="html, css, javascript, e-commerce, product, page, challenge, frontend mentor, frontend, web developer, responsive, mobile first">
+  <!-- displays site properly based on user's device -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Sass/main.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+
+<body>
+  <header class="header_top">
+    <div class="left_top_header">
+      <button class="btn_nav" type="button" aria-controls="main-nav" aria-expanded="false">
+
+        <span class="sr-only">Menu Button</span>
+        <img src="images/icon-menu.svg" alt="menu" role="presentation">
+
+      </button>
+
+      <h1 class="logo"><a href="index.html" class="invisible" tabindex="0">sneakers</a></h1>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main Menu">
+        <div class="main-nav__content_container">
+
+          <button class="main-nav__close_btn" type="button">
+            <span class="sr-only">close menu</span>
+            <span class="icon icon_close" aria-hidden="true"></span>
+          </button>
+
+          <ul class="main-nav__links">
+            <li><a href="#" class="nav_item">Collections</a></li>
+            <li><a href="#" class="nav_item">Men</a></li>
+            <li><a href="#" class="nav_item">Woman</a></li>
+            <li><a href="#" class="nav_item">About</a></li>
+            <li><a href="#" class="nav_item">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="right_top_header">
+
+      <button class="btn_cart__top_header" aria-controls="cart-section" type="button" aria-expanded="false">
+        <span class="sr-only">button cart</span>
+        <span class="icon icon_cart" aria-hidden="true"></span>
+        <span class="items_quantity">
+          <span class="value">0</span><span class="sr-only">items</span>
+        </span>
+      </button>
+
+      <button class="user_container" type="button" aria-label="user section">
+        <img src="images/image-avatar.png" alt="avatar" class="user_container__img" role="presentation">
+      </button>
+    </div>
+
+    <section class="cart_section" id="cart_section" aria-live="polite">
+
+      <h3 class="cart_section__title">Cart</h3>
+      <div class="cart_section__body">
+        <p class="empty_msg">Your cart is empty.</p>
+        <ul class="cart_section__products"></ul>
+        <button class="cart_section__btn_checkout" type="button">Checkout</button>
+      </div>
+    </section>
+  </header>
+
+</body>
+
+</html>
