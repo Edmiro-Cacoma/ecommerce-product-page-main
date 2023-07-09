@@ -2,78 +2,229 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Edmiro Cacoma">
-  <meta name="description"
-    content="A responsive, mobile first e-commerce product page built according to the challenge by Frontend Mentor, using HTML, CSS and Javascript">
-  <meta name="keywords"
-    content="html, css, javascript, e-commerce, product, page, challenge, frontend mentor, frontend, web developer, responsive, mobile first">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- displays site properly based on user's device -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="Sass/main.css">
+  <link rel="stylesheet" href="App/style/main.css">
+
   <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
 </head>
 
 <body>
-  <header class="header_top">
-    <div class="left_top_header">
-      <button class="btn_nav" type="button" aria-controls="main-nav" aria-expanded="false">
+  <!-- header starts -->
+  <div class="row">
 
-        <span class="sr-only">Menu Button</span>
-        <img src="images/icon-menu.svg" alt="menu" role="presentation">
+    <header class="header flex">
 
-      </button>
 
-      <h1 class="logo"><a href="index.html" class="invisible" tabindex="0">sneakers</a></h1>
+      <nav class="nav">
 
-      <nav class="main-nav" id="main-nav" aria-label="Main Menu">
-        <div class="main-nav__content_container">
+        <div class="nav__hamburguer">
+          <img src="App/images/icon-menu.svg" alt="">
+          <span class="sr-only">Menu Icon</span>
+        </div>
 
-          <button class="main-nav__close_btn" type="button">
-            <span class="sr-only">close menu</span>
-            <span class="icon icon_close" aria-hidden="true"></span>
-          </button>
+        <div class="nav__menu">
 
-          <ul class="main-nav__links">
-            <li><a href="#" class="nav_item">Collections</a></li>
-            <li><a href="#" class="nav_item">Men</a></li>
-            <li><a href="#" class="nav_item">Woman</a></li>
-            <li><a href="#" class="nav_item">About</a></li>
-            <li><a href="#" class="nav_item">Contact</a></li>
+          <div class="nav__close">
+            <img src="App/images/icon-close.svg" alt="icon close">
+          </div>
+
+
+          <ul class="nav__list">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Woman</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
       </nav>
-    </div>
 
-    <div class="right_top_header">
-
-      <button class="btn_cart__top_header" aria-controls="cart-section" type="button" aria-expanded="false">
-        <span class="sr-only">button cart</span>
-        <span class="icon icon_cart" aria-hidden="true"></span>
-        <span class="items_quantity">
-          <span class="value">0</span><span class="sr-only">items</span>
-        </span>
-      </button>
-
-      <button class="user_container" type="button" aria-label="user section">
-        <img src="images/image-avatar.png" alt="avatar" class="user_container__img" role="presentation">
-      </button>
-    </div>
-
-    <section class="cart_section" id="cart_section" aria-live="polite">
-
-      <h3 class="cart_section__title">Cart</h3>
-      <div class="cart_section__body">
-        <p class="empty_msg">Your cart is empty.</p>
-        <ul class="cart_section__products"></ul>
-        <button class="cart_section__btn_checkout" type="button">Checkout</button>
+      <div class="logo">
+        <a href="index.html">
+          <img src="App/images/logo.svg" alt="sneakers logo">
+        </a>
       </div>
-    </section>
-  </header>
 
+      <div class="header__cart-icon">
+        <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+            fill="#69707D" fill-rule="nonzero" />
+        </svg>
+        <!-- <span>3</span> -->
+      </div>
+
+      <div class="header__user-avatar">
+        <img src="App/images/image-avatar.png" alt="user avatar">
+      </div>
+
+      <div class="cart-content">
+        <h3 class="cart-content__heading">Cart</h3>
+        <p class="empty-msg">Your cart is empty</p>
+      </div>
+
+    </header>
+  </div>
+  <!-- End header -->
+
+  <!-- Start Main -->
+  <main>
+    <!-- Start Mobile Slider -->
+    <div class="slider-mobile">
+      <div class="slider-mobile__bar">
+        <div class="slider-mobile__item">
+          <img src="App/images/image-product-1.jpg" alt="product 1">
+        </div>
+        <div class="slider-mobile__item">
+          <img src="App/images/image-product-2.jpg" alt="product 2">
+        </div>
+        <div class="slider-mobile__item">
+          <img src="App/images/image-product-3.jpg" alt="product 3">
+        </div>
+        <div class="slider-mobile__item">
+          <img src="App/images/image-product-4.jpg" alt="product 4">
+        </div>
+      </div>
+
+      <div class="slider-mobile__controls">
+        <div class="slider-mobile__btn-previous">
+          <img src="App/images/icon-previous.svg" alt="icon previous">
+        </div>
+
+        <div class="slider-mobile__btn-next">
+          <img src="App/images/icon-next.svg" alt="icon next">
+        </div>
+      </div>
+    </div>
+    <!-- End Mobile Slider -->
+
+    <div class="row flex">
+      <!-- Start Desktop Slider -->
+      <div class="slider-desktop">
+
+        <div class="slider-desktop__active-photo">
+          <img src="App/images/image-product-1.jpg" alt="product">
+        </div>
+
+        <div class="slider-desktop__thumbnails">
+
+          <div class="slider-desktop__thumb slider-desktop__thumb--active" data-src="App/images/image-product-1.jpg">
+            <img src="App/images/image-product-1-thumbnail.jpg" alt="product thumbnail">
+          </div>
+
+          <div class="slider-desktop__thumb" data-src="App/images/image-product-2.jpg">
+            <img src="App/images/image-product-2-thumbnail.jpg" alt="product thumbnail">
+          </div>
+
+          <div class="slider-desktop__thumb " data-src="App/images/image-product-3.jpg">
+            <img src="App/images/image-product-3-thumbnail.jpg" alt="product thumbnail">
+          </div>
+
+          <div class="slider-desktop__thumb" data-src="App/images/image-product-4.jpg">
+            <img src="App/images/image-product-4-thumbnail.jpg" alt="product thumbnail">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- End Desktop Slider -->
+      <div class="product-buy">
+        <span class="company-name">Sneaker company</span>
+        <h1 class="main-heading">Fall Limited Edition Sneakers</h1>
+        <p class="paragraph">These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="product-buy__prices">
+          <span class="product-buy__new-price">$125.00</span>
+          <span class="product-buy__discount-percent">50%</span>
+          <span class="product-buy__old-price">$250.00</span>
+        </div>
+
+        <div class="flex-parent">
+          <div class="product-buy__quantity">
+            <input type="number" name="product-quantity" id="product-quantity" value="0" />
+
+            <div class="product-buy__increase-icon">
+              <img src="App/images/icon-plus.svg" alt="icon plus">
+            </div>
+
+            <div class="product-buy__decrease-icon">
+              <img src="App/images/icon-minus.svg" alt="icon minus">
+            </div>
+          </div>
+
+          <button class="product-buy__add-cart">
+            <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                fill="#69707D" fill-rule="nonzero" />
+            </svg>
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="slider-lightbox">
+    <div class="slider-lightbox__active-photo">
+
+      <div class="slider-lightbox__close-icon">
+        <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+            fill="#fff" fill-rule="evenodd" />
+        </svg>
+      </div>
+
+      <img src="App/images/image-product-1.jpg" alt="product">
+
+      <div class="slider-lightbox__prev-btn">
+        <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd" />
+        </svg>
+      </div>
+
+      <div class="slider-lightbox__next-btn">
+        <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="slider-lightbox__thumbnails">
+
+      <div class="slider-lightbox__thumb slider-lightbox__thumb--active"
+        data-src="App/images/image-product-1.jpg"><img src="App/images/image-product-1-thumbnail.jpg"
+          alt="product thumbnail"></div>
+
+      <div class="slider-lightbox__thumb" data-src="App/images/image-product-2.jpg"><img
+          src="App/images/image-product-2-thumbnail.jpg" alt="product thumbnail"></div>
+
+      <div class="slider-lightbox__thumb" data-src="App/images/image-product-3.jpg"><img
+          src="App/images/image-product-3-thumbnail.jpg" alt="product thumbnail"></div>
+
+      <div class="slider-lightbox__thumb" data-src="App/images/image-product-4.jpg"><img
+          src="App/images/image-product-4-thumbnail.jpg" alt="product thumbnail"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p class="copyright">
+      Challenge By <a href="https://www.frontendmentor.io/home" target="_blank" class="footer-link">Frontend Mentor</a>
+      Coded
+      By <a href="https://www.linkedin.com/in/edmiro-cacoma-88aa37224/" target="_blank" class="footer-link">Edmiro
+        Cacoma</a> &copy;2023
+    </p>
+  </footer>
+  <script src="App/js/app.js"></script>
 </body>
+
 
 </html>
