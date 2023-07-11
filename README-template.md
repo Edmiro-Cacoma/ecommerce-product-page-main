@@ -30,14 +30,14 @@ Users should be able to:
 
 ### Screenshot
 
-![]([./screenshot](https://github.com/Edmiro-Cacoma/ecommerce-product-page-main/blob/main/App/images/sneaker-desktop.png))
+![]([./ecommerce-product-page-main/blob/main/App/images/sneaker-desktop.png])
 ![]([./screenshot.jpg](https://github.com/Edmiro-Cacoma/ecommerce-product-page-main/blob/main/App/images/sneaker-mobile.png))
 
 
 
 ### Links
 
-- Solution URL: [Add solution URL here]([https://your-solution-url.com](https://ecommerce-product-page-main-eight-xi.vercel.app))
+- Solution URL: [Add solution URL here]([https://your-solution-url.com](https://ecommerce-product-page-main-eight-xi.vercel.app)])
 - Live Site URL: [Add live site URL here]([https://your-live-site-url.com](https://ecommerce-product-page-main-eight-xi.vercel.app))
 
 ## My process
